@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: temp-API
+  annotations:
+    github.com/project-slug: lt-jshipley/temp-2
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
