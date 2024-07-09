@@ -1,10 +1,23 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: temp-API
+  name: temp-api
+  description: A temporary API
   annotations:
     github.com/project-slug: lt-jshipley/temp-2
 spec:
-  type: other
-  lifecycle: unknown
+  type: openapi
+  lifecycle: experimental
   owner: guests
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Temp API
+      version: 1.0.0
+    paths:
+      /example:
+        get:
+          summary: Example endpoint
+          responses:
+            '200':
+              description: Successful response
